@@ -12,3 +12,10 @@ int main() {
     fun();
     return 0;
 }
+
+//Output
+/* 
+x = 1
+x = 2
+x = 3
+*/
