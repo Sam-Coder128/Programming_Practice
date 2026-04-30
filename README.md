@@ -5,3 +5,6 @@ Maximum_2.c - Max of 2 numbers
 Palindrome.c Checks palindrome number or not 
 StaticVariableDemo.c - Shows how static variable works
 AutoVsStatic.c - Shows comparison in auto variable and static
+StructDemo.c - Demonstrates defining and using a simple struct.
+StructSizeComparisons.c - Shows how member order affects struct size due to padding/alignment.
+StructPadding.c - Reinforces the concept of padding in structs.
