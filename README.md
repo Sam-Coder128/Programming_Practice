@@ -9,3 +9,4 @@ StructDemo.c - Demonstrates defining and using a simple struct.
 StructSizeComparisons.c - Shows how member order affects struct size due to padding/alignment.
 StructPadding.c - Reinforces the concept of padding in structs.
 StructIndirect.c - How to access structure indirectly using pointer of struct.
+StructArray.c - Demonstrates structure array and its object.
