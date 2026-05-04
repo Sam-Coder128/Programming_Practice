@@ -11,3 +11,4 @@ StructPadding.c - Reinforces the concept of padding in structs.
 StructIndirect.c - How to access structure indirectly using pointer of struct.
 StructArray.c - Demonstrates structure array and its object.
 StructArrayX.c - Access and initialize structure of array using the dot operator(.)
+SignedUnsigned.c - How signed unsigned integer types work.
