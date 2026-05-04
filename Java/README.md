@@ -7,3 +7,5 @@ Object.java - Basics of objects and classes
 SingleLevel.java - Inheritance in java basic
 Access.java - Demonstrates Java access specifiers: public, private, and protected.
 ThisSuper.java - Introduction to concepts of this and super.
+ThisSuperX.java - In derived class we dont always need super because variables are inherited.
+ThisSuperXX.java - Same variable name can be used in base and derived and accessed using this super.
