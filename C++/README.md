@@ -9,3 +9,4 @@ SingleLevelX.cpp - Derived has its own constructor, destructor and method so its
 SingleLevelPrivate.cpp - Private has full abstraction and cant be called in main or next class.
 SingleLevelProtected.cpp - Protected can be called in derived inheritance cant be called in main.
 Access.cpp - How access specifiers work private public and protected.
+UpCasting.cpp - Demonstrates upcasting using base class pointer pointing to derived class.
