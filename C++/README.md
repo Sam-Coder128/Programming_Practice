@@ -10,3 +10,4 @@ SingleLevelPrivate.cpp - Private has full abstraction and cant be called in main
 SingleLevelProtected.cpp - Protected can be called in derived inheritance cant be called in main.
 Access.cpp - How access specifiers work private public and protected.
 UpCasting.cpp - Demonstrates upcasting using base class pointer pointing to derived class.
+UpCastingDynamic.cpp - This upcasting is different becoz it is dynamically done.
