@@ -14,3 +14,5 @@ StructArrayX.c - Access and initialize structure of array using the dot operator
 SignedUnsigned.c - How signed unsigned integer types work.
 StringCreate.c - Demonstrates different ways of string creation.
 StringTraversal.c - Shows Pointer traversal of a string in C prints every letter.
+StringAccess.c - Accessing string individually through value.
+StringAccessX.c - Accessing string using pointers address and value.
