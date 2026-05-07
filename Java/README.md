@@ -11,3 +11,4 @@ ThisSuperX.java - In derived class we dont always need super because variables a
 ThisSuperXX.java - Same variable name can be used in base and derived and accessed using this super.
 StringDemo.java - Demonstrates String in java and printing length of it.
 StringCompare.java - Shows comparison between the both strings.
+StringCompareX.java - Different way of string comparison.
