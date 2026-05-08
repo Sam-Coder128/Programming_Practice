@@ -11,3 +11,4 @@ SingleLevelProtected.cpp - Protected can be called in derived inheritance cant b
 Access.cpp - How access specifiers work private public and protected.
 UpCasting.cpp - Demonstrates upcasting using base class pointer pointing to derived class.
 UpCastingDynamic.cpp - This upcasting is different becoz it is dynamically done.
+StaticDataa.cpp - How memory of static variable works which is in the class.
