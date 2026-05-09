@@ -12,3 +12,4 @@ ThisSuperXX.java - Same variable name can be used in base and derived and access
 StringDemo.java - Demonstrates String in java and printing length of it.
 StringCompare.java - Shows comparison between the both strings.
 StringCompareX.java - Different way of string comparison.
+StaticData.java - Working of static variable in application.
