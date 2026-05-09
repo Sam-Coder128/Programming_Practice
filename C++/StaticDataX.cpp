@@ -1,27 +1,41 @@
 #include<iostream>
 using namespace std;
 
-class Demo{
-    public:
-        int i;          // auto
-        int j;          // auto
-        static int k;
+///////////////////////////////////////////////////////////////
+//
+// Class Name : Demo
+// Members :    int i, int j, static int k
+// Description: Shows static member shared across all objects.
+// Author:      Samruddh Shivkumar Birajdar
+//
+///////////////////////////////////////////////////////////////
 
-        Demo(){
-            i=0;
-            j=0;
-        }
+class Demo {
+public:
+    int i;          // instance variable
+    int j;          // instance variable
+    static int k;   // static variable (class-level)
 
+    Demo() {
+        i = 0;
+        j = 0;
+    }
 };
 
-int Demo :: k = 11;
+int Demo::k = 11; // definition of static member outside class
 
-int main()
-{
+///////////////////////////////////////////////////////////////
+//
+// Application : Demonstrates static member access.
+//
+///////////////////////////////////////////////////////////////
+
+int main() {
     Demo dobj;
-    cout << Demo::k << endl; //11
 
-    cout << dobj.i << endl;  //0
-    cout << dobj.j << endl; //0
+    cout << Demo::k << endl; // 11
+    cout << dobj.i << endl;  // 0
+    cout << dobj.j << endl;  // 0
+
     return 0;
 }
