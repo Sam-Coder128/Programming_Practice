@@ -1,20 +1,35 @@
 #include<iostream>
 using namespace std;
 
-class Base{
+///////////////////////////////////////////////////////////////
+//
+// Classes : Base, Derived
+// Members : Base → int i, j; Derived → int x, y
+// Description: Demonstrates upcasting from Derived to Base pointer.
+// Author:      Samruddh Shivkumar Birajdar
+//
+///////////////////////////////////////////////////////////////
+
+class Base {
 public:
     int i, j;
 };
 
-class Derived: public Base{
+class Derived : public Base {
 public:
     int x, y;
 };
 
-int main(){
+///////////////////////////////////////////////////////////////
+//
+// Application : Shows upcasting with Base pointer to Derived object.
+//
+///////////////////////////////////////////////////////////////
+
+int main() {
     Base *bp = NULL;
     Derived dobj;
-    bp = &dobj;               // UpCasting
+    bp = &dobj;   // UpCasting
 
     return 0;
 }
