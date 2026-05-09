@@ -1,12 +1,40 @@
 #include <iostream>
 using namespace std;
 
+///////////////////////////////////////////////////////////////
+//
+// Class Name : Demo
+// Methods :    Constructor, Destructor
+// Description: Demonstrates lifecycle of objects in C++.
+// Author:      Samruddh Shivkumar Birajdar
+//
+///////////////////////////////////////////////////////////////
+
 class Demo {
 public:
-    Demo() { cout << "Constructor called\n"; }
-    ~Demo() { cout << "Destructor called\n"; }
+    // Constructor
+    Demo() {
+        cout << "Constructor called" << endl;
+    }
+
+    // Destructor
+    ~Demo() {
+        cout << "Destructor called" << endl;
+    }
 };
 
+///////////////////////////////////////////////////////////////
+//
+// Application demonstrating constructor and destructor calls
+//
+///////////////////////////////////////////////////////////////
+
 int main() {
-    Demo d;  // Constructor runs
-}            // Destructor runs automatically
+    cout << "Creating object..." << endl;
+    Demo d;   // Constructor runs here
+
+    cout << "Object will go out of scope at end of main()" << endl;
+    // Destructor runs automatically when 'd' goes out of scope
+
+    return 0;
+}
