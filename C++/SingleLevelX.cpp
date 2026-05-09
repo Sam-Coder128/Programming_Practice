@@ -1,36 +1,54 @@
 #include<iostream>
 using namespace std;
 
-class Base{
-    public:
-        int i, j;
+///////////////////////////////////////////////////////////////
+//
+// Class Name : Base
+// Members :    int i, int j
+// Methods :    Constructor, Destructor, Fun()
+// Description: Base class with simple data and method.
+// Author:      Samruddh Shivkumar Birajdar
+//
+///////////////////////////////////////////////////////////////
 
-        Base(){
-            cout << "Inside Base Constructor." << endl;
-            i=0;
-            j=0;
-        }
-        ~Base(){
-            cout << "Inside Base Destructor." << endl;
-        }
-        void Fun(){
-            cout << "Inside Base Fun." << endl;
-        }
+class Base {
+public:
+    int i, j;
+
+    Base() {
+        cout << "Inside Base Constructor." << endl;
+        i = 0;
+        j = 0;
+    }
+    ~Base() {
+        cout << "Inside Base Destructor." << endl;
+    }
+    void Fun() {
+        cout << "Inside Base Fun." << endl;
+    }
 };
-class Derived: public Base{
+
+class Derived : public Base {
 public:
     int x;
-    Derived(){
+    Derived() {
         cout << "Inside Derived Constructor." << endl;
-        x=0;
+        x = 0;
     }
-    ~Derived(){
+    ~Derived() {
         cout << "Inside Derived Destructor." << endl;
     }
-    void Gun(){
+    void Gun() {
         cout << "Inside Gun of Derived." << endl;
     }
 };
+
+///////////////////////////////////////////////////////////////
+//
+// Application : Demonstrates single-level inheritance.
+//
+///////////////////////////////////////////////////////////////
+
 int main(){ 
     cout << "Inside main." << endl;
     
@@ -38,9 +56,9 @@ int main(){
     cout << "Size of Base class object is : " << sizeof(Base) << endl;
     cout << "Size of Derived class object is : " << sizeof(Derived) << endl;
     
-    cout << dobj.i << endl;     //0
-    cout << dobj.j << endl;     //0
-    cout << dobj.x << endl;     //0
+    cout << dobj.i << endl;     // 0
+    cout << dobj.j << endl;     // 0
+    cout << dobj.x << endl;     // 0
 
     dobj.Fun();
     dobj.Gun();
