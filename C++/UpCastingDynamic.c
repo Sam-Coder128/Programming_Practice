@@ -1,20 +1,34 @@
 #include<iostream>
 using namespace std;
 
-class Base{
+///////////////////////////////////////////////////////////////
+//
+// Classes : Base, Derived
+// Members : Base → int i, j; Derived → int x, y
+// Description: Demonstrates dynamic upcasting using new operator.
+// Author:      Samruddh Shivkumar Birajdar
+//
+///////////////////////////////////////////////////////////////
+
+class Base {
 public:
     int i, j;
 };
 
-class Derived: public Base{
+class Derived : public Base {
 public:
     int x, y;
 };
 
-int main(){
+///////////////////////////////////////////////////////////////
+//
+// Application : Shows dynamic upcasting with Base pointer.
+//
+///////////////////////////////////////////////////////////////
+
+int main() {
     Base *bp = NULL;
-    
-    bp = new Derived();               // UpCasting in dynamic
+    bp = new Derived();   // UpCasting in dynamic allocation
 
     return 0;
 }
