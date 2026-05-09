@@ -13,3 +13,4 @@ UpCasting.cpp - Demonstrates upcasting using base class pointer pointing to deri
 UpCastingDynamic.cpp - This upcasting is different becoz it is dynamically done.
 StaticData.cpp - How memory of static variable works which is in the class.
 StaticData.cpp - Accessing static variable in main().
+StaticMethod.cpp - Demonstrates the working of static method.
