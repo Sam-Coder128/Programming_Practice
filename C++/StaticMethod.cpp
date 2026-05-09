@@ -1,45 +1,57 @@
 #include<iostream>
 using namespace std;
 
-class Demo{
-    public:
-        int i;          // auto
-        int j;          // auto
-        static int k;
+///////////////////////////////////////////////////////////////
+//
+// Class Name : Demo
+// Members :    int i, int j, static int k
+// Methods :    fun(), gun()
+// Description: Shows difference between static and non-static methods.
+// Author:      Samruddh Shivkumar Birajdar
+//
+///////////////////////////////////////////////////////////////
 
-        Demo(){
-            i=0;
-            j=0;
-        }
+class Demo {
+public:
+    int i;          // instance variable
+    int j;          // instance variable
+    static int k;   // static variable (class-level)
 
-        void fun(){
-            cout << "Inside non static fun.\n";
-            cout << "i: " << i << endl;
-            cout << "j: " << j << endl;
-            cout << "k: " << k << endl;
-        }
+    Demo() {
+        i = 0;
+        j = 0;
+    }
 
-        static void gun(){
-            cout << "Inside static gun.\n";
-            cout << "k: " << k << endl;
-        }
+    void fun() {
+        cout << "Inside non static fun.\n";
+        cout << "i: " << i << endl;
+        cout << "j: " << j << endl;
+        cout << "k: " << k << endl;
+    }
 
+    static void gun() {
+        cout << "Inside static gun.\n";
+        cout << "k: " << k << endl;
+    }
 };
 
-int Demo :: k = 11;
+int Demo::k = 11; // definition of static member outside class
 
-int main()
-{
-    cout << Demo::k << endl; //11
+///////////////////////////////////////////////////////////////
+//
+// Application : Demonstrates static vs non-static methods.
+//
+///////////////////////////////////////////////////////////////
 
-    Demo::gun();
+int main() {
+    cout << Demo::k << endl; // 11
+
+    Demo::gun();             // static method call
 
     Demo dobj;
-    
+    cout << dobj.i << endl;  // 0
+    cout << dobj.j << endl;  // 0
 
-    cout << dobj.i << endl;  //0
-    cout << dobj.j << endl; //0
-
-    dobj.fun();
+    dobj.fun();              // non-static method call
     return 0;
 }
