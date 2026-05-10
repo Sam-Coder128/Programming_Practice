@@ -1,4 +1,19 @@
+///////////////////////////////////////////////////////////////
+//
+// Function Name : main
+// Output        : signed int, unsigned int
+// Description   : Illustrates difference between signed and unsigned integers.
+// Author        : Samruddh Shivkumar Birajdar
+//
+///////////////////////////////////////////////////////////////
+
 #include <stdio.h>
+
+///////////////////////////////////////////////////////////////
+//
+// Application : Clarifies edge case behavior when assigning negatives to unsigned.
+//
+///////////////////////////////////////////////////////////////
 
 int main() {
     signed int a = -10;      // signed can hold negatives
@@ -16,7 +31,7 @@ int main() {
 
 // Output
 /*
-Signed a = -10
-Unsigned b = 10
-Unsigned c = 4294967295
+Signed int a = -10
+Unsigned int b = 10
+Unsigned int c = 4294967295
 */
