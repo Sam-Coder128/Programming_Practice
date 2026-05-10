@@ -1,17 +1,17 @@
-#include<stdio.h>
-
 ///////////////////////////////////////////////////////////////
 //
-// Concept : Pointers with basic datatypes
-// Variables : char, int, float, double
-// Description: Shows dereferencing of different datatype pointers.
-// Author:      Samruddh Shivkumar Birajdar
+// Function Name : main
+// Output        : printed values
+// Description   : Illustrates dereferencing of different datatype pointers.
+// Author        : Samruddh Shivkumar Birajdar
 //
 ///////////////////////////////////////////////////////////////
 
+#include <stdio.h>
+
 ///////////////////////////////////////////////////////////////
 //
-// Application : Illustrates pointer usage across multiple datatypes.
+// Application : Clarifies pointer usage across char, int, float, double.
 //
 ///////////////////////////////////////////////////////////////
 
@@ -32,6 +32,6 @@ int main() {
     printf("%d\n", *iptr);
     printf("%f\n", *fptr);
     printf("%lf\n", *dptr);
-    
+
     return 0;
 }
