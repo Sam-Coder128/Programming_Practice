@@ -1,4 +1,18 @@
-class ArrayDemoMulti{
+///////////////////////////////////////////////////////////////
+//
+// Class Name : JaggedArray
+// Members :    int Arr[][]
+// Description: Explains jagged array structure with uneven row sizes.
+// Author:      Samruddh Shivkumar Birajdar
+//
+///////////////////////////////////////////////////////////////
+
+class JaggedArray {
+    ///////////////////////////////////////////////////////////////
+    //
+    // Application : Highlights row-wise initialization and length property usage.
+    //
+    ///////////////////////////////////////////////////////////////
     public static void main(String[] args) {
         int Arr[][] = new int[3][];
 
