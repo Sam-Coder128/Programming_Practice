@@ -1,10 +1,22 @@
-#include<stdio.h>
+///////////////////////////////////////////////////////////////
+//
+// Function Name : main
+// Output        : none
+// Description   : Explains unlink system call to delete a file.
+// Author        : Samruddh Shivkumar Birajdar
+//
+///////////////////////////////////////////////////////////////
 
-#include<unistd.h>
+#include <stdio.h>
+#include <unistd.h>
+
+///////////////////////////////////////////////////////////////
+//
+// Application : Clarifies how unlink removes a file from filesystem.
+//
+///////////////////////////////////////////////////////////////
 
 int main() {
-
     unlink("Marvellous.txt");
-
     return 0;
 }
