@@ -1,9 +1,10 @@
 ///////////////////////////////////////////////////////////////
 //
-// Class : Base
+// Class : Base, Derived
 // Members : int i
-// Methods : Constructor, Fun()
-// Description : Base class with parameterized constructor.
+// Methods : Constructor, Fun(), Gun()
+// Description : Demonstrates constructor chaining and super keyword.
+// Author      : Samruddh Shivkumar Birajdar
 //
 ///////////////////////////////////////////////////////////////
 class Base {
@@ -19,20 +20,10 @@ class Base {
     }
 }
 
-///////////////////////////////////////////////////////////////
-//
-// Class : Derived
-// Inherits : Base
-// Members : int i
-// Methods : Constructor, Gun()
-// Description : Derived class calls Base constructor using super.
-//
-///////////////////////////////////////////////////////////////
 class Derived extends Base {
     public int i;
 
     public Derived() {
-        super(11);   // Explicit call to Base(int) constructor
         this.i = 21;
         System.out.println("Inside Derived constructor.");
     }
@@ -46,12 +37,12 @@ class Derived extends Base {
 
 ///////////////////////////////////////////////////////////////
 //
-// Application : Demonstrates constructor chaining with super keyword.
+// Application : Demonstrates use of super keyword.
 //
 ///////////////////////////////////////////////////////////////
 class SuperDemo {
     public static void main(String[] args) {
-        Derived Dobj = new Derived();
+        Derived Dobj = new Derived(); // Error
         Dobj.Gun();
     }
 }
