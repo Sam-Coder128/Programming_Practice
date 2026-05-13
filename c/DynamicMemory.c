@@ -1,0 +1,39 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Program : Dynamic Marks Entry
+// Input   : Number of elements, marks (float values)
+// Output  : Prints entered marks
+// Methods : calloc(), scanf(), printf()
+// Description : Demonstrates dynamic memory allocation using calloc.
+// Author      : Samruddh Shivkumar Birajdar
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+#include<stdlib.h>
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Application : Accepts marks dynamically and displays them.
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int main(){
+    float *Marks = NULL;
+    int size=0, i=0;
+
+    printf("Enter number of elements: ");
+    scanf("%d",&size);
+
+    Marks=(float *)calloc(size, sizeof(float));
+
+    printf("Enter your marks:\n");
+    for(i=0; i<size; i++)
+        scanf("%f",&Marks[i]);
+
+    printf("Entered marks are:\n");
+    for (i = 0; i < size; i++)
+        printf("%f\n", Marks[i]);
+
+    return 0;
+}
