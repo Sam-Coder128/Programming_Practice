@@ -1,0 +1,40 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Program      : Global vs Local Variable Demo
+// Input        : None
+// Output       : Prints values of global and local variables
+// Methods      : printf(), fun()
+// Description  : Demonstrates difference between global and local variables in C.
+// Author       : Samruddh Shivkumar Birajdar
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+int no = 11;        // Global variable (Data)
+
+void fun()
+{
+    int i = 51;       // Local variable (Stack)
+
+    printf("Inside fun : %d\n",i);      // 51
+    printf("Inside fun : %d\n",no);     // 11
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Application : Demonstrates scope of global and local variables.
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int i = 21;     // Local variable (Stack)
+
+    printf("Inside main : %d\n",i);     // 21
+    printf("Inside main : %d\n",no);    // 11
+    
+    fun();
+
+    return 0;
+}
