@@ -1,0 +1,33 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Class Name(s) : Demo, ThreadScenario2
+// Input         : None
+// Output        : Prints main thread message and run method message
+// Methods       : run(), start()
+// Description   : Demonstrates creating a thread by implementing Runnable interface in Java.
+// Author        : Samruddh Shivkumar Birajdar
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class Demo implements Runnable{
+    public void run(){  System.out.println("Inside Run Method.");  }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Application : Shows execution of main thread and child thread using Runnable interface.
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class ThreadScenario2{
+    public static void main(String[] args) {
+        
+        System.out.println("Main thread is running...");
+
+        Demo dobj = new Demo();
+
+        Thread tobj = new Thread(dobj);
+
+        tobj.start();
+    }
+}
